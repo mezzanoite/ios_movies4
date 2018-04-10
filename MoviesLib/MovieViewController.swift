@@ -27,14 +27,16 @@ class MovieViewController: UIViewController {
         super.viewDidLoad()
         
         //Alimentando as IBOutlets com as informações dos filmes
-        
+    
+    }
+    
+    override func viewWillAppear(_ animated: true) {
         ivPoster.image = movie.poster
         lbTitle.text = movie.title
         //lbGenre.text = movie.categoriesDescription
         lbDuration.text = movie.duration
         lbScore.text = "⭐️ \(movie.rating)/10"
         tvSinopsis.text = movie.summary
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
