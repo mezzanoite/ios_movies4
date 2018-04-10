@@ -30,7 +30,7 @@ class MovieViewController: UIViewController {
     
     }
     
-    override func viewWillAppear(_ animated: true) {
+    override func viewWillAppear(_ animated: Bool) {
         ivPoster.image = movie.poster
         lbTitle.text = movie.title
         //lbGenre.text = movie.categoriesDescription
